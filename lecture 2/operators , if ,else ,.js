@@ -171,6 +171,8 @@ switch (fruit) {
 }
 
 
+
+
 // input statement
 let userInput = prompt("Enter a fruit:");
 switch (userInput.toLowerCase()) {

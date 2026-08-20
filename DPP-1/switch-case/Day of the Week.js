@@ -15,6 +15,7 @@
 
 let Day = "Monday";
 switch (Day) {
+    
     case "Monday":
         console.log("Today is Monday");
         break;
