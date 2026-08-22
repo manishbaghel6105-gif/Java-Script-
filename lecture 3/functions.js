@@ -1,8 +1,8 @@
 
-let alokMarks = 46 + 56 + 23;
-let addiMarks = 24 + 24 + 42;
-let karan = 54 + 23 + 65;
-let anu = 54 + 52 + 23;
+// let alokMarks = 46 + 56 + 23;
+// let addiMarks = 24 + 24 + 42;
+// let karan = 54 + 23 + 65;
+// let anu = 54 + 52 + 23;
 
 // let productPrice = 3000;
 // let discountAmount = 3000 * 50 / 100;
@@ -73,27 +73,27 @@ let anu = 54 + 52 + 23;
 //     console.log("function declaration");
 // }
 
-// console.log(add(5, 7));
+
 let add = function (num1, num2) {
     return num1 + num2
+    
 }
+console.log(add(5, 7));
 
 
 // arrow function
 
 // syntax 1
-let add = num1 =>  num1 + 4;
 
+let add1 = num1 =>  num1 + 4;
+console.log(add1(5, 7));
 // syntax 2
-let add = (num1 , num2) => num1 + num2;
-
+let add2 = (num1 , num2) => num1 + num2;
+console.log(add2(5, 7));
 // synatax 3
-let add = (num1 , num2) => {
+let add3 = (num1 , num2) => {
     // something
     // something
-    return num1 + num2
+    return num1 - num2
 };
-
-
-
-console.log(add(5, 7));
+console.log(add3(5, 7));
