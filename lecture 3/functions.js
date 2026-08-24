@@ -74,26 +74,73 @@
 // }
 
 
-let add = function (num1, num2) {
-    return num1 + num2
+// let add = function (num1, num2) {
+//     return num1 + num2
     
-}
-console.log(add(5, 7));
+// }
+// console.log(add(5, 7));
 
 
 // arrow function
 
 // syntax 1
 
-let add1 = num1 =>  num1 + 4;
-console.log(add1(5, 7));
-// syntax 2
-let add2 = (num1 , num2) => num1 + num2;
-console.log(add2(5, 7));
-// synatax 3
-let add3 = (num1 , num2) => {
-    // something
-    // something
-    return num1 - num2
-};
-console.log(add3(5, 7));
+// let add1 = num1 =>  num1 + 4;
+// console.log(add1(5, 7));
+// // syntax 2
+// let add2 = (num1 , num2) => num1 + num2;
+// console.log(add2(5, 7));
+// // synatax 3
+// let add3 = (num1 , num2) => {
+//     // something
+//     // something
+//     return num1 - num2
+// };
+// console.log(add3(5, 7));
+
+
+
+
+
+// setTimeout(function() {
+//   console.log("This message is delayed by 1 second.");
+// }, 1000);
+
+// let add4 = (a, b) => a + b;
+// console.log(add4(4,5));
+
+
+// // Regular function
+// let obj1 = {
+//   value: 'a',
+//   createAnonFunction: function() {
+//     return function() {
+//       console.log("this && this.value");
+//     };
+//   }
+// };
+
+// obj1.createAnonFunction()();
+
+// // Arrow function
+// let obj2 = {
+//   value: 'a',
+//   createArrowFunction: function() {
+//     return () => {
+//       console.log(this.value);
+//     };
+//   }
+// };
+
+// obj2.createArrowFunction()();
+
+
+
+function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+wait(5000)
+  .then(() => "Done")
+  .then((message) => console.log(message));
+

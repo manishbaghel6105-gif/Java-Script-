@@ -1,60 +1,3 @@
-// // array to use this --------->
-// let product1=["iphone" , 56835 ,3,423,5,2,5,25,234]
-
-// // object to use this ---------->
-// let product2 = {
-//     name : "iphone",
-//     price : 50923,
-//     avgRating:4.5,
-//     totalrevies: 75,
-//     discount:10,
-// }
-    // printProductName : function(){
-    //     console.log("Iphone 18 Pro Max");
-    //     return "3456234"
-
-//     } , 
-//     printDiscount(){
-//         console.log("10%");
-//     }
-
-// }
-// let res = product2.printProductName()
-// console.log(res);
-// let discount = product2.printDiscount()
-// console.log(discount);
-
-
-
-// // function to use this ---------> ()
-// // array to use this ---------> []
-// // Object to use this ---------> {}
-
-// console.log(product1);   // array 
-// console.log(product2);
-// console.log(product2['name']);
-
-
-// console.log(Object.keys(product2));
-// console.log(Object.values(product2));
-// console.log(Object.entries(product2))
-
-
-
-
-// loop in object 
-for(value of product1){
-    console.log(value);
-}
-
-for(let i=0;i<product2.length;i++)
-    console.log(product2[i]);
-
-// foreach loop
-product1.forEach(functtion(value,index))
-    console.log(value,index);
-
-
 // let product1 = [56835, 4.5, 75, 10,"iphone"]
 
 // console.log(product1[0]);
@@ -138,7 +81,6 @@ product1.forEach(functtion(value,index))
 
 // const [name , price ,c ,d] = ["iphone",56835, 4.5, 75, 10]
 // console.log(price);
-
 let product2 = {
     price: 57633,
     avgRating: 4.5,
@@ -213,3 +155,118 @@ function add(...numbers) {
 let { manufacturerDetail , ...userKeLiyeDetail } = product2; // rest
 
 console.log(userKeLiyeDetail);
+
+
+
+
+// // function to use this ---------> ()
+// // array to use this ---------> []
+// // Object to use this ---------> {}
+
+// console.log(product1);   // array 
+// console.log(product2);
+// console.log(product2['name']);
+let student = {
+    name: "varad",
+    rollNo: 34,
+    subjects: ["math", "english", "hindi"],
+    totalMarks: 600
+}
+
+// how to rename key
+const { subjects: vishay, totalMarks = 500, ...variable } = student
+// subjects -> vishay
+// let vishay = subjects
+// console.log(vishay);
+// console.log(totalMarks);
+
+
+// object merging using spread operator
+let obj1 = {
+    name: "yash",
+    phone: 7825763245
+}
+
+let obj2 = {
+    address: "india",
+    adharCard: 5223452345543,
+    name: "nishant",
+}
+
+
+let obj3 = { ...obj1, ...obj2 }
+
+// console.log(obj3);
+
+
+// array and object update
+
+let arr1 = [1, 2, 3, 4]
+
+arr1[1] = "updated"
+
+// console.log(arr);
+
+const obj = {
+    name: "kasturi",
+    rollNo: 23,
+}
+
+obj["name"] = "vanshika"
+obj.name = "sumit"
+
+
+delete obj.rollNo  // property deleted - > this is for object
+
+// console.log(obj);
+
+// console.log(obj.address?.street);
+
+let arr1 = [10, 2, 4, 5, 3]
+
+// arr1.splice(1, 3) // delete
+// arr1.splice(3, 0 , ["add"])  // add
+// arr1.splice(3, 2 , ["replace"])  //replace
+// console.log(arr1);
+
+
+// let trimArr = arr1.slice(1 , 3)
+
+// console.log(trimArr);
+
+
+// console.log(arr1.indexOf(43624));
+
+
+let res = arr1.find((value) => {
+
+    if (value === 3) {
+        return value
+    } 
+})
+
+console.log(res);
+
+let resIndex = arr1.findIndex((value) => {
+    return value === 3;
+})
+// console.log(resIndex);
+
+//flat
+
+let arr3 = [1, 2, 3, 4, 5, [6, 7, 8, [9, 10, 11]]]
+
+// console.log(arr3.flat(Infinity));
+
+
+// mutability
+
+let arr4 = [4, 5, 6, 62, 213, 13]
+
+let arrCopy = arr4;
+let arrCopy2 = [...arr4]; // spread operator
+
+arrCopy2.pop()
+
+// console.log("arr4",arr4);
+// console.log("arrCopy",arrCopy2);

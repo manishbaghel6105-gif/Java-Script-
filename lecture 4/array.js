@@ -54,3 +54,8 @@ products.unshift("hello")  // join to array start index
 console.log(products);
 products.shift("hello")  // join to array start deleting index
 console.log(products);
+
+
+
+let fruits = Array.of(Array.from(['apple', 'banana', 'cherry']));
+console.log(fruits);
