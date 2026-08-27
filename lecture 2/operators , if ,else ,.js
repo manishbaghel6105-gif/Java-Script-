@@ -83,10 +83,10 @@ console.log(!x); // false
 console.log(!y); // true
 
 
-const age =16;
+const age1 =16;
 const hasid = true;
 // // and operator (&&)
-const canenterclub= age >= 18 && hasid== true;
+const canenterclub= age1 >= 18 && hasid== true;
 console.log(canenterclub); // false
 
 // // or operator (||)
