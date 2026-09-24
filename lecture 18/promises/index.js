@@ -1,3 +1,4 @@
+
 // console.log("a");
 
 // const p = new Promise(function (resolve, reject) {
@@ -143,13 +144,11 @@ function paymet(price) {
 // })
 
 let res = searchPizza()
-
+let price =0
 res.then(function (price) {
     return addToCart(price)
 }).then(function (price) {
     return paymet(price)
-}).then(function () {
-    console.log("Bss Aa hee gaya Pizza");
 }).then(function () {
     console.log("Bss Aa hee gaya Pizza");
 }).catch(function (err) {

@@ -1,4 +1,3 @@
-
 // function fun1(callback) {
 //     console.log("Hii");
 //     callback()

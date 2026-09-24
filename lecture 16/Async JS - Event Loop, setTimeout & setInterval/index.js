@@ -86,8 +86,3 @@ setInterval(() => {
     body.style.backgroundColor = `#${color}`
 
 }, 500)
-
-
-
-
-
